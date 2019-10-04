@@ -1,3 +1,5 @@
+import { SamsApiClient } from './sams-api/SamsApiClient';
+import { ConfigurationReader } from './ConfigurationReader';
 import { RenderComponentEvent, RenderComponentPayload } from './../../shared/events/RenderComponentEvent';
 import { ChangeSlideEvent, ChangeSlideEventPayload } from '../../shared/events/ChangeSlideEvent';
 import express from "express";
@@ -6,6 +8,17 @@ import socketio from "socket.io";
 
 const app = express();
 app.set("port", process.env.PORT || 3001);
+
+const config = ConfigurationReader.GetConfig(process);
+const apiClient = new SamsApiClient(config.Sams);
+
+app.get("/api/table", async (req, res) => {
+    res.send(await apiClient.GetCurrentTable());
+})
+
+app.get("/api/future-matches", async (req, res) => {
+    res.send(await apiClient.GetFutureMatches);
+})
 
 const httpServer = new http.Server(app);
 // set up socket.io and bind it to our
