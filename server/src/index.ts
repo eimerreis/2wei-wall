@@ -29,8 +29,8 @@ io.on("connection", function(socket: socketio.Socket) {
         }
     });
 
-    socket.on("render-component", (payload: RenderComponentPayload) => {
-        console.log(payload);
+    socket.on(RenderComponentEvent.EventId, (payload: RenderComponentPayload) => {
+        io.emit(RenderComponentEvent.EventId, payload);
     })
 });
 
