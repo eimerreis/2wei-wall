@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "watch-ts": "tsc -w",
-    "watch-node": "nodemon dist/server.js",
+    "watch-node": "nodemon dist/server/src/index.js",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\""
   },
   "dependencies": {
