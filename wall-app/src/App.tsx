@@ -7,6 +7,7 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Route path="/components/player" component={PlayerPage} />
+      <Route path="/components/table" component={TableComoponent} />
       <Route path="/render" component={RenderComponent} />
     </BrowserRouter>
   );
