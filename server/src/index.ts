@@ -22,6 +22,10 @@ app.get("/api/future-matches", async (req, res) => {
     res.send(await apiClient.GetFutureMatches());
 })
 
+app.get("/api/past-matches", async (req, res) => {
+    res.send(await apiClient.GetPastMatches());
+})
+
 app.get("/api/next-home-game", async (req, res) => {
     const games = await apiClient.GetFutureMatches();
     const homeGames = games.matches.match.filter(x => x.host.id === config.Sams.TeamId);
