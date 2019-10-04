@@ -13,6 +13,7 @@ export class WebsocketService {
 	}
 
 	private waitForConnection = async() => {
+		this.socket.connect();
 		while (!this.socket.connected) {
 			await timeout(1);
 		}
@@ -22,5 +23,6 @@ export class WebsocketService {
 	ChangeSlide = async (markup: string) => {
 		await this.waitForConnection();
 		this.socket.emit("render-component", { markup });
+		this.socket.disconnect();
 	};
 }
