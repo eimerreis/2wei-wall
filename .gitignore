@@ -7,6 +7,9 @@
 /client.pnp
 .pnp.js
 
+# secrets
+/server/.env
+
 # testing
 /coverage
 
