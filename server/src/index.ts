@@ -4,11 +4,13 @@ import { ConfigurationReader } from './ConfigurationReader';
 import { RenderComponentEvent, RenderComponentPayload } from './../../shared/events/RenderComponentEvent';
 import { ChangeSlideEvent, ChangeSlideEventPayload } from '../../shared/events/ChangeSlideEvent';
 import express from "express";
+import cors from "cors";
 import * as http from "http";
 import socketio from "socket.io";
 
 const app = express();
 app.set("port", process.env.PORT || 3001);
+app.use(cors());
 
 const config = ConfigurationReader.GetConfig(process);
 const apiClient = new SamsApiClient(config.Sams);
@@ -63,6 +65,7 @@ io.on("connection", function(socket: socketio.Socket) {
     });
 
     socket.on(RenderComponentEvent.EventId, (payload: RenderComponentPayload) => {
+        console.log("change slide event with payload " + JSON.stringify(payload));
         io.emit(RenderComponentEvent.EventId, payload);
     })
 });

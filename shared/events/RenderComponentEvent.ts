@@ -2,6 +2,7 @@ import { EventBase } from "./EventBase";
 
 export interface RenderComponentPayload {
     markup: string;
+    transition: "SlideTop" | "FadeIn"
 }
 
 export class RenderComponentEvent extends EventBase<RenderComponentPayload> {
