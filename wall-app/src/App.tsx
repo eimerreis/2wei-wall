@@ -13,7 +13,7 @@ const App: React.FC = () => {
       <Route path="/components/player" component={PlayerPage} />
       <Route path="/components/table" component={TableComponent} />
       <Route path="/components/past-matches" component={PastMatchesPage} />
-      <Route path="/components/home-game" component={NextHomeGamePage} />
+      <Route path="/components/next-home-game" component={NextHomeGamePage} />
       <Route path="/render" component={RenderComponent} />
       <Route path="/remote-control" component={RemoteControl} />
     </BrowserRouter>
