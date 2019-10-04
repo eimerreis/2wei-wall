@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const AutomationButton = styled.button<{ running: boolean }>`
-    width: 50%;
+export const AutomationButton = styled.button<{ running: boolean, width?: string }>`
+    width: ${(props) => props.width || "50%"};
     height: 62px;
     background: rgba(0,0,0,0.04);
     border: 2px solid rgba(0,0,0,0.04);

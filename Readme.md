@@ -30,3 +30,7 @@ To run the app locally, execute the following commands
 ## Controlling the Wall App
 
 - navigate to `http://localhost:3000/remote-control`
+
+## Adding new Home Players
+
+- simply extend the `/server/src/tvr-players/players.json` file

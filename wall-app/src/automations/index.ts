@@ -1,4 +1,6 @@
 import { HomePlayersAutomation } from './HomePlayers';
+import { ResultsAutomation } from './ResultsAutomation';
+import { AllAutomation } from './AllAutomation';
 
 type AutomationMapping = {
     [key in Automations]: () => Promise<any>;
@@ -6,8 +8,12 @@ type AutomationMapping = {
 
 export const AutomationMappings: AutomationMapping = {
     "HomePlayers": HomePlayersAutomation,
+    "Results": ResultsAutomation,
+    "All": AllAutomation,
 }
 
 export enum Automations {
-    HomePlayers = "HomePlayers"
+    All = "All",
+    HomePlayers = "HomePlayers",
+    Results = "Results"
 } 

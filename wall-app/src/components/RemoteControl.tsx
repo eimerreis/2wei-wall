@@ -33,7 +33,9 @@ export const RemoteControl = () => {
         <Flex flexWrap="wrap">
             <Box width={[1]}>
                 <h2>Automationen</h2>
+                <AutomationButton width={"100%"} running={activeAutomation === Automations.All} onClick={(event) => onAutomationClick(Automations.All)}>Alle Folien</AutomationButton>
                 <AutomationButton running={activeAutomation === Automations.HomePlayers} onClick={(event) => onAutomationClick(Automations.HomePlayers)}>TVR Players</AutomationButton>
+                <AutomationButton running={activeAutomation === Automations.Results} onClick={(event) => onAutomationClick(Automations.Results)}>Ergebnisse</AutomationButton>
             </Box> 
         </Flex>
     );
