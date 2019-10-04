@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOMServer from "react-dom/server";
+import { BrowserRouter, Route } from "react-router-dom";
+import io from "socket.io-client";
+
 import logo from './logo.svg';
 import './App.css';
-import io from "socket.io-client";
+import { PlayerPage } from './components/Player';
+
 
 const divStyle: React.CSSProperties = {
   fontSize: "32pt",
@@ -11,28 +15,21 @@ const divStyle: React.CSSProperties = {
 
 const App: React.FC = () => {
   const markup = ReactDOMServer.renderToStaticMarkup(<div style={divStyle}><h1>Hello</h1></div>);
-  const socket = io.connect("wss://echo.websocket.org");
+  const socket = io.connect("http://localhost:3001");
 
-  socket.emit("showComponent", { markup });
 
+  socket.on("connect", () => {
+    console.log("connected");
+    socket.emit("render-component", { markup });
+  console.log(markup);
+  })
+
+  
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Route path="/components/player" component={PlayerPage}></Route>
+    </BrowserRouter>
   );
 }
 

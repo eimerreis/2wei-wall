@@ -1,3 +1,4 @@
+import { RenderComponentEvent, RenderComponentPayload } from './../../shared/events/RenderComponentEvent';
 import { ChangeSlideEvent, ChangeSlideEventPayload } from '../../shared/events/ChangeSlideEvent';
 import express from "express";
 import * as http from "http";
@@ -27,6 +28,10 @@ io.on("connection", function(socket: socketio.Socket) {
             console.error(err);
         }
     });
+
+    socket.on("render-component", (payload: RenderComponentPayload) => {
+        console.log(payload);
+    })
 });
 
 
