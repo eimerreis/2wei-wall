@@ -37,7 +37,7 @@ export const TableComponent = (props: TableResponse) => {
         height: "58px",
         width: "100%",
         overflow: "hidden",
-        backgroundColor: 'rgb(236, 235, 255)',
+        backgroundColor: 'rgb(229, 229, 229)',
     }
 
     const rowStyle: React.CSSProperties = {
