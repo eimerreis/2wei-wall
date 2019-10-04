@@ -1,3 +1,4 @@
+import { TvrPlayerService } from './tvr-players/TvrPlayerService';
 import { SamsApiClient } from './sams-api/SamsApiClient';
 import { ConfigurationReader } from './ConfigurationReader';
 import { RenderComponentEvent, RenderComponentPayload } from './../../shared/events/RenderComponentEvent';
@@ -11,14 +12,29 @@ app.set("port", process.env.PORT || 3001);
 
 const config = ConfigurationReader.GetConfig(process);
 const apiClient = new SamsApiClient(config.Sams);
+const tvrService = new TvrPlayerService();
 
 app.get("/api/table", async (req, res) => {
     res.send(await apiClient.GetCurrentTable());
 })
 
 app.get("/api/future-matches", async (req, res) => {
-    res.send(await apiClient.GetFutureMatches);
+    res.send(await apiClient.GetFutureMatches());
 })
+
+app.get("/api/next-home-game", async (req, res) => {
+    const games = await apiClient.GetFutureMatches();
+    const homeGames = games.matches.match.filter(x => x.host.id === config.Sams.TeamId);
+    if(homeGames) {
+        res.send(homeGames[0]);
+    } else {
+        res.send("no-home-games-anymore");
+    }
+})
+
+app.get("/api/tvr-players", (req, res) => {
+    res.send(tvrService.GetPlayers());
+});
 
 const httpServer = new http.Server(app);
 // set up socket.io and bind it to our
