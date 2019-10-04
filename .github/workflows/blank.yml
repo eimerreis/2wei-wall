@@ -1,6 +1,9 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches: 
+      - master
 
 jobs:
   build:
@@ -9,6 +12,5 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Build Server App
-      working-directory: /server
-      run: npm run build
+    - name: Checkout Sources
+      run: cd ./server && npm install && npm run build
