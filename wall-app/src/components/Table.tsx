@@ -14,6 +14,7 @@ export const TableComponent = (props: TableResponse) => {
         overflow: "hidden",
         backgroundColor: 'red',
     }
+    
 
     const titleStyle: React.CSSProperties = {
         fontFamily: 'Roboto',
