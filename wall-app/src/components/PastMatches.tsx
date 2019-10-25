@@ -1,8 +1,6 @@
 import { PastMatchesResponse, Team } from "../types/PastMatchhesResponse";
 import React from "react";
-
 import pastMatches from "../test-data/past-matches.json";
-import { flex, bottom } from "styled-system";
 
 const TeamComponent = (team: Team) => {
     return <h1 style={partieTeamStyle}>{team.name}</h1>;
@@ -18,53 +16,55 @@ const partieStyle: React.CSSProperties = {
     display: 'flex',
 }
 const partieTeamStyle: React.CSSProperties = {
-    width: '40%',
 }
 
 const partiePointStyle: React.CSSProperties = {
-    width: '20%',
-    display:'flex',
-    marginLeft:'10%'
+    textAlign: 'center',
 }
 
-const pointStyles: React.CSSProperties = {
-    marginRight:'10px',
-
+const setPointsStyleWrapper: React.CSSProperties = {
+    display: 'flex',
+    textAlign: 'center',
 }
 const setPointsStyle: React.CSSProperties = {
-    marginLeft:'10px'
+    display: 'block',
+    padding: '6px',
+    marginTop: '-24px',
+    maxWidth: '80px',
 }
 const divSetPointsStyle: React.CSSProperties = {
-    display:'flex',
-    marginTop:'-30px',
-    marginLeft:'33%'
+    display: 'flex',
 }
 
-export const PastMatchesComponent = (props: PastMatchesResponse) =>{ 
+export const PastMatchesComponent = (props: PastMatchesResponse) => {
     const { match } = props.matches;
     return (
         <div style={wrapperStyle}>
             <h1>Die letzten Spiele</h1>
-            <hr/>
+            <hr />
             <div style={partieStyle}>
-                <h1 style={partieTeamStyle}>
-                    {match.team[0].name}
-                </h1>
-                <div style={partiePointStyle}>
-                <h1 style={pointStyles}>{match.results.setPoints}</h1>
+                <div>
+                    <TeamComponent {...match.team[0]} />
                 </div>
-                <h1 style={partieTeamStyle}>
-                    {match.team[1].name}
-                </h1>
-            </div>
-            <div style={divSetPointsStyle}>
-                    {match.results.sets.set.map(set =>{
-                        return (
-                            <h2 style={setPointsStyle}>
-                                {set.points}
-                            </h2>
-                        )
-                    })}
+                <div style={partiePointStyle}>
+                    <h1>{match.results.setPoints}</h1>
+                    <div style={divSetPointsStyle}>
+                        <div style={setPointsStyleWrapper}>
+                            {match.results.sets.set.map(set => {
+                                return (
+                                    <div style={setPointsStyle}>
+                                        <h2>
+                                            {set.points}
+                                        </h2>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <TeamComponent {...match.team[1]} />
+                </div>
             </div>
         </div>
     )

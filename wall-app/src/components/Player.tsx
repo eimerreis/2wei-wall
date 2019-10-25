@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOMServer from "react-dom/server";
 
 export interface Player {
     name: string;
@@ -10,10 +9,7 @@ export interface Player {
     memberSince: number;
     image: string;
 }
-
-
 export const PlayerComponent = (props: Player) => {
-
     const playerNameStyle: React.CSSProperties = {
         textTransform: "uppercase",
         letterSpacing: "1.2px",
@@ -26,7 +22,7 @@ export const PlayerComponent = (props: Player) => {
         width: "100%",
         overflow: "hidden"
     }
-    
+
     const horizontalRuleStyle: React.CSSProperties = {
         border: "1px solid rgba(0,0,0,0.095)",
     }
@@ -34,31 +30,27 @@ export const PlayerComponent = (props: Player) => {
     const divStyle: React.CSSProperties = {
         padding: "24px",
         float: "left",
-      }
+    }
 
-
-
-    return ( 
+    return (
         <div style={wrapperStyle}>
-            
-                <img style={divStyle} src={props.image} alt="Player Picture" width="50%" height="50%"></img>
-                
-                <div style={divStyle}>
-                    <h1 style={playerNameStyle}>{props.name}</h1>
-                    <hr style={horizontalRuleStyle} />
-                    <h2>{props.rangerName} | #{props.number}</h2>
-                    <hr style={horizontalRuleStyle} />
-                    <h2>Position: {props.position}</h2>
-                    <h2>Alter: {props.age}</h2>
-                    <h2>Im Team seit: {props.memberSince}</h2>
-                </div>
+            <img style={divStyle} src={props.image} alt="Player Picture" width="50%" height="50%"></img>
+            <div style={divStyle}>
+                <h1 style={playerNameStyle}>{props.name}</h1>
+                <hr style={horizontalRuleStyle} />
+                <h2>{props.rangerName} | #{props.number}</h2>
+                <hr style={horizontalRuleStyle} />
+                <h2>Position: {props.position}</h2>
+                <h2>Alter: {props.age}</h2>
+                <h2>Im Team seit: {props.memberSince}</h2>
+            </div>
         </div>
     )
 }
 
 export const PlayerPage = () => {
     const player: Player = {
-        name: "Oliver Knobelspiess",
+        name: "Robin Leber",
         number: 11,
         rangerName: "Bumsi-Ranger",
         position: "Außen",
