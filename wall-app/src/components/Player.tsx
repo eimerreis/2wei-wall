@@ -9,6 +9,27 @@ export interface Player {
     memberSince: number;
     image: string;
 }
+
+const PlayerFact = (props: { factName: string, value: any }) => {
+    const factWrapperStyle: React.CSSProperties = {
+        display: "flex",
+        padding: "24px 8px",
+        fontSize: "3rem",
+    }
+
+    const keyValueStyle: React.CSSProperties = {
+        width: "50%",
+        textAlign: "left",
+    }
+
+    return ( 
+        <div style={factWrapperStyle}>
+            <div style={keyValueStyle}>{props.factName}</div>
+            <div style={keyValueStyle}>{props.value}</div>
+        </div>
+    )
+}
+
 export const PlayerComponent = (props: Player) => {
     const playerNameStyle: React.CSSProperties = {
         textTransform: "uppercase",
@@ -24,10 +45,12 @@ export const PlayerComponent = (props: Player) => {
     }
 
     const horizontalRuleStyle: React.CSSProperties = {
-        border: "1px solid rgba(0,0,0,0.095)",
+        border: "3px solid rgba(0,0,0,0.095)",
     }
 
     const divStyle: React.CSSProperties = {
+        width: "50%",
+        fontSize: "2rem",
         padding: "24px",
         float: "left",
     }
@@ -40,9 +63,9 @@ export const PlayerComponent = (props: Player) => {
                 <hr style={horizontalRuleStyle} />
                 <h2>{props.rangerName} | #{props.number}</h2>
                 <hr style={horizontalRuleStyle} />
-                <h2>Position: {props.position}</h2>
-                <h2>Alter: {props.age}</h2>
-                <h2>Im Team seit: {props.memberSince}</h2>
+                <PlayerFact factName="Position" value={props.position} />
+                <PlayerFact factName="Alter" value={props.age} />
+                <PlayerFact factName="Im Team seit" value={props.memberSince} />
             </div>
         </div>
     )

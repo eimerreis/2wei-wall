@@ -71,6 +71,6 @@ io.on("connection", function(socket: socketio.Socket) {
 });
 
 
-httpServer.listen(3001, () => {
+httpServer.listen(process.env.PORT || 3001, () => {
     console.log("server is listenning");
 });
