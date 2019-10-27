@@ -53,9 +53,17 @@ export const TableComponent = (props: TableResponse) => {
         width: "100px",
         color:'red'
     }
-    const { ranking } = data.rankings;
+
+    const tableWrapperStyle: React.CSSProperties = {
+        width: "42%",
+        transform: "scale(1.6)",
+        position: "absolute",
+        left: "28%",
+        top: "198px",
+    }
+    const { ranking } = props.rankings;
     return (
-         <div>
+         <div style={tableWrapperStyle}>
             <div style={titleStyle}>
                     <h1 style={teamNameStyle}>Team</h1>
                     <h1 style={tableInfoStyle}>Sp</h1>

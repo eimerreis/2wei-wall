@@ -50,7 +50,7 @@ export const PlayerComponent = (props: Player) => {
 
     const divStyle: React.CSSProperties = {
         width: "50%",
-        fontSize: "2rem",
+        fontSize: "3rem",
         padding: "24px",
         float: "left",
     }

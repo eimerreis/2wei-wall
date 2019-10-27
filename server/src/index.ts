@@ -32,7 +32,7 @@ app.get("/api/next-home-game", async (req, res) => {
     const games = await apiClient.GetFutureMatches();
     const homeGames = games.matches.match.filter(x => x.host.id === config.Sams.TeamId);
     if(homeGames) {
-        res.send(homeGames[0]);
+        res.send(homeGames[1]);
     } else {
         res.send("no-home-games-anymore");
     }

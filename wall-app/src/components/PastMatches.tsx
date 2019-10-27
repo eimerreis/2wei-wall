@@ -38,36 +38,42 @@ const divSetPointsStyle: React.CSSProperties = {
 
 export const PastMatchesComponent = (props: PastMatchesResponse) => {
     const { match } = props.matches;
-    return (
-        <div style={wrapperStyle}>
-            <h1>Die letzten Spiele</h1>
-            <hr />
-            <div style={partieStyle}>
-                <div>
-                    <TeamComponent {...match.team[0]} />
-                </div>
-                <div style={partiePointStyle}>
-                    <h1>{match.results.setPoints}</h1>
-                    <div style={divSetPointsStyle}>
-                        <div style={setPointsStyleWrapper}>
-                            {match.results.sets.set.map(set => {
-                                return (
-                                    <div style={setPointsStyle}>
-                                        <h2>
-                                            {set.points}
-                                        </h2>
-                                    </div>
-                                )
-                            })}
+
+    if (match) {
+
+
+        return (
+            <div style={wrapperStyle}>
+                <h1>Die letzten Spiele</h1>
+                <hr />
+                <div style={partieStyle}>
+                    <div>
+                        <TeamComponent {...match.team[0]} />
+                    </div>
+                    <div style={partiePointStyle}>
+                        <h1>{match.results.setPoints}</h1>
+                        <div style={divSetPointsStyle}>
+                            <div style={setPointsStyleWrapper}>
+                                {match.results.sets.set.map(set => {
+                                    return (
+                                        <div style={setPointsStyle}>
+                                            <h2>
+                                                {set.points}
+                                            </h2>
+                                        </div>
+                                    )
+                                })}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <TeamComponent {...match.team[1]} />
+                    <div>
+                        <TeamComponent {...match.team[1]} />
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+        )
+    }
+    return <React.Fragment />
 }
 
 export const PastMatchesPage = () => {
