@@ -34,3 +34,10 @@ To run the app locally, execute the following commands
 ## Adding new Home Players
 
 - simply extend the `/server/src/tvr-players/players.json` file
+
+
+## Ideas
+
+- create Hooks for Websocket Connection
+  - `const { onEvent, send } = useWebhook("onSlideChange");
+  -  could be used inside a WebhookContext.Provider, which set's up connection information etc
