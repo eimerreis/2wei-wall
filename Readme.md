@@ -41,3 +41,8 @@ To run the app locally, execute the following commands
 - create Hooks for Websocket Connection
   - `const { onEvent, send } = useWebhook("onSlideChange");
   -  could be used inside a WebhookContext.Provider, which set's up connection information etc
+- use styled-components + it's server side rendering 
+- use framer motion for page transitions
+- better handling of setTimeout
+- error handling ist not there currently
+- hosting + ci / cd
