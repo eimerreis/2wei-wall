@@ -1,0 +1,408 @@
+{
+	"rankings": {
+		"matchSeries": {
+			"id": "16394979",
+			"uuid": "4c7d8d2f-65b1-49dc-b0dc-f44200b65e6f",
+			"allSeasonId": "d924be72-b294-a69f-2f65-f411cb9fd671",
+			"name": "Dritte Liga Süd Männer",
+			"shortName": "DLS M",
+			"type": "League",
+			"updated": "2019-09-30 09:54:34.633",
+			"structureUpdated": "2019-09-30 09:52:52.925",
+			"resultsUpdated": "2019-09-30 09:54:34.633",
+			"season": {
+				"id": "16394144",
+				"uuid": "3a0a3c59-41e1-41c4-a3fc-877032b9296c",
+				"name": "2019/20"
+			},
+			"hierarchy": {
+				"id": "16394870",
+				"uuid": "72a38a4d-a7f3-4b46-8cf2-35adfc776f5b",
+				"name": "Dritte Liga Süd",
+				"shortName": "DLS",
+				"hierarchyLevel": "3"
+			},
+			"fullHierarchy": {
+				"hierarchy": [
+					{
+						"id": "16394870",
+						"name": "Dritte Liga Süd",
+						"shortName": "DLS",
+						"hierarchyLevel": "3"
+					},
+					{
+						"id": "16394684",
+						"name": "Bereich 2.BL Süd",
+						"shortName": "Süd",
+						"hierarchyLevel": "2"
+					},
+					{
+						"id": "16394297",
+						"name": "Dritte Liga",
+						"shortName": "DL",
+						"hierarchyLevel": "1"
+					},
+					{
+						"id": "16394185",
+						"name": "Deutscher Volleyball-Verband",
+						"shortName": "DVV",
+						"hierarchyLevel": "0"
+					}
+				]
+			},
+			"association": { "name": "Dritte Liga Süd", "shortName": "DL S" }
+		},
+		"ranking": [
+			{
+				"team": {
+					"id": "16395038",
+					"uuid": "507089a9-eae4-420d-9d5d-669b9eb020d1",
+					"name": "TV Bliesen",
+					"shortName": "Bliesen",
+					"clubCode": "BLI",
+					"club": { "name": "TV Bliesen", "shortName": {} }
+				},
+				"place": "1",
+				"matchesPlayed": "1",
+				"wins": "1",
+				"losses": "0",
+				"points": "3",
+				"setPoints": "3:0",
+				"setWinScore": "3",
+				"setLoseScore": "0",
+				"setPointDifference": "3",
+				"setQuotient": "∞",
+				"ballPoints": "75:55",
+				"ballWinScore": "75",
+				"ballLoseScore": "55",
+				"ballPointDifference": "20",
+				"ballQuotient": "1,364",
+				"resultTypes": {
+					"matchResult": [
+						{ "result": "3:0", "count": "1" },
+						{ "result": "3:1", "count": "0" },
+						{ "result": "3:2", "count": "0" },
+						{ "result": "2:3", "count": "0" },
+						{ "result": "1:3", "count": "0" },
+						{ "result": "0:3", "count": "0" }
+					]
+				}
+			},
+			{
+				"team": {
+					"id": "16395033",
+					"uuid": "af3727f5-94ea-412b-a409-9c2827fafa66",
+					"name": "TSG Blankenloch",
+					"shortName": "Blankenloch",
+					"clubCode": "BLA",
+					"club": { "name": "TSG Blankenloch", "shortName": {} }
+				},
+				"place": "2",
+				"matchesPlayed": "1",
+				"wins": "1",
+				"losses": "0",
+				"points": "3",
+				"setPoints": "3:0",
+				"setWinScore": "3",
+				"setLoseScore": "0",
+				"setPointDifference": "3",
+				"setQuotient": "∞",
+				"ballPoints": "76:58",
+				"ballWinScore": "76",
+				"ballLoseScore": "58",
+				"ballPointDifference": "18",
+				"ballQuotient": "1,310",
+				"resultTypes": {
+					"matchResult": [
+						{ "result": "3:0", "count": "1" },
+						{ "result": "3:1", "count": "0" },
+						{ "result": "3:2", "count": "0" },
+						{ "result": "2:3", "count": "0" },
+						{ "result": "1:3", "count": "0" },
+						{ "result": "0:3", "count": "0" }
+					]
+				}
+			},
+			{
+				"team": {
+					"id": "16947023",
+					"uuid": "e45919a6-1227-4aa7-af43-50ebb790764f",
+					"name": "MTV Ludwigsburg",
+					"shortName": "Ludwigsburg",
+					"clubCode": "LUB",
+					"club": { "name": "MTV Ludwigsburg", "shortName": {} }
+				},
+				"place": "3",
+				"matchesPlayed": "1",
+				"wins": "1",
+				"losses": "0",
+				"points": "2",
+				"setPoints": "3:2",
+				"setWinScore": "3",
+				"setLoseScore": "2",
+				"setPointDifference": "1",
+				"setQuotient": "1,500",
+				"ballPoints": "106:104",
+				"ballWinScore": "106",
+				"ballLoseScore": "104",
+				"ballPointDifference": "2",
+				"ballQuotient": "1,019",
+				"resultTypes": {
+					"matchResult": [
+						{ "result": "3:0", "count": "0" },
+						{ "result": "3:1", "count": "0" },
+						{ "result": "3:2", "count": "1" },
+						{ "result": "2:3", "count": "0" },
+						{ "result": "1:3", "count": "0" },
+						{ "result": "0:3", "count": "0" }
+					]
+				}
+			},
+			{
+				"team": {
+					"id": "16395006",
+					"uuid": "61bf83c3-7e72-4502-8849-941b2f1fbc8e",
+					"name": "USC Konstanz",
+					"shortName": "Konstanz",
+					"clubCode": "KON",
+					"club": { "name": "USC Konstanz", "shortName": {} }
+				},
+				"place": "4",
+				"matchesPlayed": "1",
+				"wins": "1",
+				"losses": "0",
+				"points": "2",
+				"setPoints": "3:2",
+				"setWinScore": "3",
+				"setLoseScore": "2",
+				"setPointDifference": "1",
+				"setQuotient": "1,500",
+				"ballPoints": "109:112",
+				"ballWinScore": "109",
+				"ballLoseScore": "112",
+				"ballPointDifference": "-3",
+				"ballQuotient": "0,973",
+				"resultTypes": {
+					"matchResult": [
+						{ "result": "3:0", "count": "0" },
+						{ "result": "3:1", "count": "0" },
+						{ "result": "3:2", "count": "1" },
+						{ "result": "2:3", "count": "0" },
+						{ "result": "1:3", "count": "0" },
+						{ "result": "0:3", "count": "0" }
+					]
+				}
+			},
+			{
+				"team": {
+					"id": "16395020",
+					"uuid": "fcee4125-090f-4a10-bf56-c9de5bb17c01",
+					"name": "TV Waldgirmes",
+					"shortName": "Waldgirmes",
+					"clubCode": "WGS",
+					"club": { "name": "TV Waldgirmes", "shortName": {} }
+				},
+				"place": "5",
+				"matchesPlayed": "1",
+				"wins": "1",
+				"losses": "0",
+				"points": "2",
+				"setPoints": "3:2",
+				"setWinScore": "3",
+				"setLoseScore": "2",
+				"setPointDifference": "1",
+				"setQuotient": "1,500",
+				"ballPoints": "101:104",
+				"ballWinScore": "101",
+				"ballLoseScore": "104",
+				"ballPointDifference": "-3",
+				"ballQuotient": "0,971",
+				"resultTypes": {
+					"matchResult": [
+						{ "result": "3:0", "count": "0" },
+						{ "result": "3:1", "count": "0" },
+						{ "result": "3:2", "count": "1" },
+						{ "result": "2:3", "count": "0" },
+						{ "result": "1:3", "count": "0" },
+						{ "result": "0:3", "count": "0" }
+					]
+				}
+			},
+			{
+				"team": {
+					"id": "16947024",
+					"uuid": "6fd4f72b-9aaf-4686-97f5-39d7d8c453fd",
+					"name": "TV Feldkirchen",
+					"shortName": "Feldkirchen",
+					"clubCode": "TVF",
+					"club": { "name": "TV Feldkirchen", "shortName": {} }
+				},
+				"place": "6",
+				"matchesPlayed": "1",
+				"wins": "0",
+				"losses": "1",
+				"points": "1",
+				"setPoints": "2:3",
+				"setWinScore": "2",
+				"setLoseScore": "3",
+				"setPointDifference": "-1",
+				"setQuotient": "0,667",
+				"ballPoints": "104:101",
+				"ballWinScore": "104",
+				"ballLoseScore": "101",
+				"ballPointDifference": "3",
+				"ballQuotient": "1,030",
+				"resultTypes": {
+					"matchResult": [
+						{ "result": "3:0", "count": "0" },
+						{ "result": "3:1", "count": "0" },
+						{ "result": "3:2", "count": "0" },
+						{ "result": "2:3", "count": "1" },
+						{ "result": "1:3", "count": "0" },
+						{ "result": "0:3", "count": "0" }
+					]
+				}
+			},
+			{
+				"team": {
+					"id": "16395028",
+					"uuid": "f93009b9-8e7b-415b-8d10-ce6cf02e427b",
+					"name": "TG Rüsselsheim II",
+					"shortName": "Rüsselsheim II",
+					"clubCode": "RÜS",
+					"club": { "name": "TG Rüsselsheim", "shortName": {} }
+				},
+				"place": "7",
+				"matchesPlayed": "1",
+				"wins": "0",
+				"losses": "1",
+				"points": "1",
+				"setPoints": "2:3",
+				"setWinScore": "2",
+				"setLoseScore": "3",
+				"setPointDifference": "-1",
+				"setQuotient": "0,667",
+				"ballPoints": "112:109",
+				"ballWinScore": "112",
+				"ballLoseScore": "109",
+				"ballPointDifference": "3",
+				"ballQuotient": "1,028",
+				"resultTypes": {
+					"matchResult": [
+						{ "result": "3:0", "count": "0" },
+						{ "result": "3:1", "count": "0" },
+						{ "result": "3:2", "count": "0" },
+						{ "result": "2:3", "count": "1" },
+						{ "result": "1:3", "count": "0" },
+						{ "result": "0:3", "count": "0" }
+					]
+				}
+			},
+			{
+				"team": {
+					"id": "16394991",
+					"uuid": "3857d3a9-ad30-49f2-8fc3-d9c8c1384130",
+					"name": "SV Fellbach",
+					"shortName": "Fellbach",
+					"clubCode": "FEL",
+					"club": { "name": "SV Fellbach", "shortName": {} }
+				},
+				"place": "8",
+				"matchesPlayed": "1",
+				"wins": "0",
+				"losses": "1",
+				"points": "1",
+				"setPoints": "2:3",
+				"setWinScore": "2",
+				"setLoseScore": "3",
+				"setPointDifference": "-1",
+				"setQuotient": "0,667",
+				"ballPoints": "104:106",
+				"ballWinScore": "104",
+				"ballLoseScore": "106",
+				"ballPointDifference": "-2",
+				"ballQuotient": "0,981",
+				"resultTypes": {
+					"matchResult": [
+						{ "result": "3:0", "count": "0" },
+						{ "result": "3:1", "count": "0" },
+						{ "result": "3:2", "count": "0" },
+						{ "result": "2:3", "count": "1" },
+						{ "result": "1:3", "count": "0" },
+						{ "result": "0:3", "count": "0" }
+					]
+				}
+			},
+			{
+				"team": {
+					"id": "16394999",
+					"uuid": "7a931052-8d7b-428f-abf1-451b58267056",
+					"name": "TV Rottenburg II",
+					"shortName": "Rottenburg II",
+					"clubCode": "TVR",
+					"club": { "name": "TV Rottenburg", "shortName": {} }
+				},
+				"place": "9",
+				"matchesPlayed": "1",
+				"wins": "0",
+				"losses": "1",
+				"points": "0",
+				"setPoints": "0:3",
+				"setWinScore": "0",
+				"setLoseScore": "3",
+				"setPointDifference": "-3",
+				"setQuotient": "0,000",
+				"ballPoints": "58:76",
+				"ballWinScore": "58",
+				"ballLoseScore": "76",
+				"ballPointDifference": "-18",
+				"ballQuotient": "0,763",
+				"resultTypes": {
+					"matchResult": [
+						{ "result": "3:0", "count": "0" },
+						{ "result": "3:1", "count": "0" },
+						{ "result": "3:2", "count": "0" },
+						{ "result": "2:3", "count": "0" },
+						{ "result": "1:3", "count": "0" },
+						{ "result": "0:3", "count": "1" }
+					]
+				}
+			},
+			{
+				"team": {
+					"id": "16395045",
+					"uuid": "58585130-97f7-4374-af4a-094ae3d6a4d6",
+					"name": "TSV G.A. Stuttgart",
+					"shortName": "GA Stuttgart",
+					"clubCode": "GAS",
+					"club": { "name": "TSV G.A. Stuttgart", "shortName": {} }
+				},
+				"place": "10",
+				"matchesPlayed": "1",
+				"wins": "0",
+				"losses": "1",
+				"points": "0",
+				"setPoints": "0:3",
+				"setWinScore": "0",
+				"setLoseScore": "3",
+				"setPointDifference": "-3",
+				"setQuotient": "0,000",
+				"ballPoints": "55:75",
+				"ballWinScore": "55",
+				"ballLoseScore": "75",
+				"ballPointDifference": "-20",
+				"ballQuotient": "0,733",
+				"resultTypes": {
+					"matchResult": [
+						{ "result": "3:0", "count": "0" },
+						{ "result": "3:1", "count": "0" },
+						{ "result": "3:2", "count": "0" },
+						{ "result": "2:3", "count": "0" },
+						{ "result": "1:3", "count": "0" },
+						{ "result": "0:3", "count": "1" }
+					]
+				}
+			}
+		]
+	}
+}

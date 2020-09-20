@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Robin Leber",
+        "number": 11,
+        "age": 22,
+        "position": "Außen",
+        "image": "http://127.0.0.1:3002/players/Robin.jpg"
+    },
+    {
+        "name": "Moritz Frölich",
+        "number": 15,
+        "age": 25,
+        "position": "Außen",
+        "image": "http://127.0.0.1:3002/players/Moritz.jpg" 
+    },
+    {
+        "name": "Finn Dostal",
+        "number": 23,
+        "age": 18,
+        "position": "Außen",
+        "image": "http://127.0.0.1:3002/players/Finn.jpg" 
+    },
+    {
+        "name": "Jonas Kuhn",
+        "number": 17,
+        "age": 21,
+        "position": "Zuspiel",
+        "image": "http://127.0.0.1:3002/players/Jonas.jpg" 
+    },    
+    {
+        "name": "Niklas Lichtenauer",
+        "number": 8,
+        "age": 19,
+        "position": "Diagonal",
+        "image": "http://127.0.0.1:3002/players/Niklas.jpg" 
+    },
+    {
+        "name": "Steve Mäder",
+        "number": 1,
+        "age": 25,
+        "position": "Mittelblock",
+        "image": "http://127.0.0.1:3002/players/Steve.jpg" 
+    },
+    {
+        "name": "Timo Kilgus",
+        "number": 7,
+        "age": 25,
+        "position": "Mittelblock",
+        "image": "http://127.0.0.1:3002/players/TimoKilgus.jpg" 
+    },
+    {
+        "name": "Yannick Menke",
+        "number": 12,
+        "age": 20,
+        "position": "Mittelblock",
+        "image": "http://127.0.0.1:3002/players/Yannick.jpg" 
+    },
+    {
+        "name": "Hannes Elsäßer",
+        "number": 16,
+        "age": 26,
+        "position": "Libero",
+        "image": "http://127.0.0.1:3002/players/Hannes.jpg" 
+    },
+    {
+        "name": "Fred Nagel",
+        "number": 6,
+        "age": 27,
+        "position": "Mittelblock",
+        "image": "http://127.0.0.1:3002/players/Fred.jpg" 
+    },
+    {
+        "name": "Markus Hieber",
+        "number": 5,
+        "age": 19,
+        "position": "Außen",
+        "image": "http://127.0.0.1:3002/players/Markus.jpg" 
+    },
+    {
+        "name": "Kai Wolf",
+        "number": 9,
+        "age": 17,
+        "position": "Außen",
+        "image": "http://127.0.0.1:3002/players/Kai.jpg" 
+    },    
+    {
+        "name": "Vincent Wachendorfer",
+        "number": 5,
+        "age": 18,
+        "position": "Diagonal",
+        "image": "http://127.0.0.1:3002/players/Vincent.jpg" 
+    },
+    {
+        "name": "Timo Baur",
+        "number": 18,
+        "age": 27,
+        "position": "Zuspiel",
+        "image": "http://127.0.0.1:3002/players/TimoBaur.jpg" 
+    },
+    {
+        "name": "Felix Weber",
+        "age": 30,
+        "position": "Co-Trainer",
+        "image": "http://127.0.0.1:3002/players/Felix.jpg" 
+    },
+        {
+        "name": "Jan Scheuermann",
+        "age": 22,
+        "position": "Trainer",
+        "image": "http://127.0.0.1:3002/players/Jan.jpg" 
+    }
+]

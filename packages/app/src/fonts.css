@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Corporate Serif';
+    src: local('Corporate Serif'), local('Corporate Serif'),
+    url(./assets/c064003t-webfont.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Corporate Regular';
+    src: local('Corporate Regular'), local('Corporate Regular'),
+    url(./assets/cg63004t-webfont.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Corporate Regular';
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}

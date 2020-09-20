@@ -1,0 +1,31 @@
+{
+  "name": "tvrwall-server",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/server/src/index.js",
+    "build": "tsc",
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon --exec node -r dotenv/config dist/server/src/index.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\""
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.1",
+    "@types/jest": "^24.0.18",
+    "@types/socket.io": "^2.1.3",
+    "@types/xml2json": "^0.11.0",
+    "axios": "^0.19.0",
+    "concurrently": "^4.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.3",
+    "socket.io": "^2.3.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3",
+    "xml2json": "^0.11.2"
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "start:wall": "yarn workspace 2wei-wall start",
+        "start:backend": ""
+    }
+}
