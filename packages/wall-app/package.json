@@ -11,7 +11,7 @@
     "@types/reflexbox": "^4.0.0",
     "@types/socket.io-client": "^1.4.32",
     "@types/styled-components": "^4.1.19",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-router-dom": "^5.1.2",
